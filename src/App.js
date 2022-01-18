@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { useState } from "react/cjs/react.development";
-import "./App.css";
+import "./App.scss";
 import Pokedex from "./components/Pokedex";
 
 function App() {
@@ -26,7 +26,7 @@ function App() {
       });
     }
     createPokemonObject(data.results);
-    await console.log(allPokemons);
+    // console.log(allPokemons);
   };
 
   useEffect(() => {
