@@ -1,38 +1,36 @@
-.App {
-  text-align: center;
+.poke-card {
+  margin: auto;
+  height: 300px;
+  width: 300px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.rock {
+  background-color: rgb(148, 81, 81);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.ghost {
+  background-color: rgb(247, 247, 247);
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.electric {
+  background-color: rgb(255, 255, 161);
 }
-
-.App-link {
-  color: #61dafb;
+.bug {
+  background-color: #f6d6a7;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.poison {
+  background-color: #e0a7f6;
+}
+.normal {
+  background-color: #f4f4f4;
+}
+.fairy {
+  background-color: rgba(255, 192, 203, 0.863);
+}
+.fire {
+  background-color: #fbe3df;
+}
+.grass {
+  background-color: #e2f9e1;
+}
+.water {
+  background-color: #e0f1fd;
 }
