@@ -2,6 +2,9 @@ import React from "react";
 
 const Pokedex = ({ id, name, image, type }) => {
   const style = `poke-card ${type}`;
+
+  const imageSrc = `/badges/${type}.png`;
+
   return (
     <div className={style}>
       <div className="poke-number">
@@ -10,7 +13,7 @@ const Pokedex = ({ id, name, image, type }) => {
       <img src={image} alt={name} />
       <div className="poke-identity">
         <h3>{name}</h3>
-        <small>Type : {type}</small>
+        <img src={imageSrc} alt={type} />
       </div>
     </div>
   );
