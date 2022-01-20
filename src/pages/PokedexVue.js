@@ -3,6 +3,7 @@ import Pokedex from "../components/Pokedex";
 import Nav from "../components/Nav";
 import { useEffect } from "react";
 import { useState } from "react/cjs/react.development";
+import "../styles/pokedex.scss";
 
 const PokedexVue = () => {
   const [allPokemons, setAllPokemons] = useState([]);
