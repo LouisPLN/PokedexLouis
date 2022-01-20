@@ -4,18 +4,11 @@ import Nav from "../components/Nav";
 import { useEffect } from "react";
 import { useState } from "react/cjs/react.development";
 import "../styles/pokedex.scss";
+import "../styles/category.scss";
 
 const CategoryVue = () => {
   const [allPokemons, setAllPokemons] = useState([]);
   const [listTypes, setAllTypes] = useState([]);
-
-  //   {
-  //     "pokemon": {
-  //         "name": "heracross",
-  //         "url": "https://pokeapi.co/api/v2/pokemon/214/"
-  //     },
-  //     "slot": 2
-  //   }
 
   const getUrlList = (pokemonsList) => {
     return pokemonsList.map((pokemon) => pokemon.pokemon.url);
@@ -48,16 +41,18 @@ const CategoryVue = () => {
     <div>
       <Nav />
       <div className="container">
-        {listTypes &&
-          listTypes?.map((type, index) => (
-            <button
-              onClick={(e) => handleType(e.target.value)}
-              key={index}
-              value={type.url}
-            >
-              {type.name}
-            </button>
-          ))}
+        <div className="filter-btn">
+          {listTypes &&
+            listTypes?.map((type, index) => (
+              <button
+                onClick={(e) => handleType(e.target.value)}
+                key={index}
+                value={type.url}
+              >
+                {type.name}
+              </button>
+            ))}
+        </div>
         <div className="list-poke">
           {allPokemons &&
             allPokemons?.map((pokemon, index) => (

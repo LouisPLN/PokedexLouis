@@ -26,12 +26,13 @@
     justify-content: space-between;
     align-items: center;
     height: 380px;
-    width: 50%;
+    width: 900px;
 
     border-radius: 15px;
     background: #f6f7f9;
 
     .close-modal {
+      cursor: pointer;
       z-index: 5;
       position: absolute;
       top: 15px;

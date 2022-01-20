@@ -5,9 +5,6 @@ import "../styles/type.scss";
 import "../styles/modal.scss";
 
 const Pokedex = ({ id, name, image, type, height, weight, attack, stats }) => {
-  const [listFavorite, setListFavorite] = useState(
-    JSON.parse(localStorage.getItem("favorites")) || []
-  );
   const style = `poke-right ${type}`;
 
   const imageSrc = `/badges/${type}.png`;
@@ -19,12 +16,10 @@ const Pokedex = ({ id, name, image, type, height, weight, attack, stats }) => {
     setModal(!modal);
   };
 
-  const toggleFavorite = () => {
-    setIsFavorite(!isFavorite);
-  };
-
   const handlePokemonFavorite = () => {
-    if (isFavorite) {
+    const listFavorite = JSON.parse(localStorage.getItem("favorites")) || [];
+
+    if (!isFavorite) {
       const pokemon = {
         id: id,
         name: name,
@@ -34,17 +29,11 @@ const Pokedex = ({ id, name, image, type, height, weight, attack, stats }) => {
         JSON.stringify([...listFavorite, pokemon])
       );
     } else {
-      setList((prev) =>
-        prev.map((todo, index) =>
-          index === completeIndex ? { ...todo, complete: !todo.complete } : todo
-        )
-      );
-      localStorage.setItem(
-        "favorites",
-        JSON.stringify([...listFavorite, pokemon])
-      );
+      const newList = listFavorite.filter((pokemon) => pokemon.id !== id);
+      console.log("newList", newList);
+      localStorage.setItem("favorites", JSON.stringify(newList));
     }
-    toggleFavorite();
+    setIsFavorite(!isFavorite);
   };
 
   return (
