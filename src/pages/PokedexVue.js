@@ -46,12 +46,16 @@ const PokedexVue = () => {
               name={pokemon.name}
               image={pokemon.sprites.other.dream_world.front_default}
               type={pokemon.types[0].type.name}
+              height={pokemon.height}
+              weight={pokemon.weight}
+              attack={pokemon.moves}
+              stats={pokemon.stats}
               key={index}
             />
           ))}
         </div>
         <button className="see-more" onClick={() => getAllPokemons()}>
-          Load More
+          Afficher plus
         </button>
       </div>
     </div>
