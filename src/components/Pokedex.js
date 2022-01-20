@@ -5,14 +5,46 @@ import "../styles/type.scss";
 import "../styles/modal.scss";
 
 const Pokedex = ({ id, name, image, type, height, weight, attack, stats }) => {
+  const [listFavorite, setListFavorite] = useState(
+    JSON.parse(localStorage.getItem("favorites")) || []
+  );
   const style = `poke-right ${type}`;
 
   const imageSrc = `/badges/${type}.png`;
 
   const [modal, setModal] = useState(false);
+  const [isFavorite, setIsFavorite] = useState(false);
 
   const toggleModal = () => {
     setModal(!modal);
+  };
+
+  const toggleFavorite = () => {
+    setIsFavorite(!isFavorite);
+  };
+
+  const handlePokemonFavorite = () => {
+    if (isFavorite) {
+      const pokemon = {
+        id: id,
+        name: name,
+      };
+      localStorage.setItem(
+        "favorites",
+        JSON.stringify([...listFavorite, pokemon])
+      );
+    } else {
+      setList((prev) =>
+        prev.map((todo, index) =>
+          index === completeIndex ? { ...todo, complete: !todo.complete } : todo
+        )
+      );
+      localStorage.setItem(
+        "favorites",
+        JSON.stringify([...listFavorite, pokemon])
+      );
+    }
+    toggleFavorite();
   };
 
   return (
@@ -83,11 +115,19 @@ const Pokedex = ({ id, name, image, type, height, weight, attack, stats }) => {
             <h3>{name}</h3>
           </div>
           <p>#0{id}</p>
-
           <button onClick={toggleModal}>Détails</button>
         </div>
         <div className={style}>
-          <img src={image} alt={name} />
+          <button onClick={handlePokemonFavorite}>
+            {isFavorite ? (
+              <img src="/logo/Favorite_fill.svg" alt="Fav" />
+            ) : (
+              <img src="/logo/Favorite.svg" alt="Fav" />
+            )}
+          </button>
+          <div className="img-container">
+            <img src={image} alt={name} />
+          </div>
         </div>
       </div>
     </div>

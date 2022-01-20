@@ -22,7 +22,10 @@ const Home = () => {
             </Link>
             <p className="hero-dev">
               Projet réalisé par
-              <a href="https://www.linkedin.com/in/louis-poulin/">
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/in/louis-poulin/"
+              >
                 Louis Poulin
               </a>
               pour le cours de React d'ASI-DEV2{" "}
@@ -30,7 +33,7 @@ const Home = () => {
             </p>
           </div>
           <div className="hero-image">
-            <a href="https://github.com/LouisPLN">
+            <a target="_blank" href="https://github.com/LouisPLN">
               Suis moi sur GitHub <img src="/logo/GitHub.png" />
             </a>
           </div>
