@@ -1,5 +1,5 @@
 import React from "react";
-import { useParams } from "react-router-dom";
+import { useParams, useLocation } from "react-router-dom";
 import Pokedex from "../components/Pokedex";
 import Nav from "../components/Nav";
 import { useEffect } from "react";
@@ -11,6 +11,9 @@ const PokedexVue = () => {
   const [seeMore, setSeeMore] = useState(
     "https://pokeapi.co/api/v2/pokemon?limit=200"
   );
+
+  const location = useLocation();
+  console.log(location);
 
   const [value, setValue] = useState("");
   const [filtered, setFiltered] = useState(allPokemons);
@@ -54,12 +57,17 @@ const PokedexVue = () => {
     <div>
       <Nav />
       <div className="container">
+        <img className="logo" src="/logo/Logo.svg" alt="logo" />
         <input
           onChange={(e) => handleChange(e.target.value)}
           value={value}
           type="text"
+          placeholder="Tapez le nom de votre Pokémon favori !"
         />
-        <button onClick={handleClear}>clear</button>
+        {/* <button className="clear-btn" onClick={handleClear}>
+          clear
+        </button> */}
+
         {/* <p>{filtered}</p> */}
         <div className="list-poke">
           {filtered.length === 0
