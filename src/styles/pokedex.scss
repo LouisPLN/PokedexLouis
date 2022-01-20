@@ -1,0 +1,102 @@
+.container {
+  padding-top: 100px;
+  width: 70%;
+  margin: auto;
+
+  .list-poke {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 100px 30px;
+
+    .poke-card {
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 400px;
+      height: 150px;
+
+      border-radius: 15px;
+      background: #f6f7f9;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+      .poke-left {
+        z-index: 2;
+        position: relative;
+        width: 40%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .poke-name {
+          position: absolute;
+          top: 20px;
+          left: 20px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 150px;
+          height: 30px;
+
+          color: #ffffff;
+          background: #303030;
+          border-radius: 20px;
+
+          h3 {
+            font-family: Karla;
+            font-weight: 300;
+            font-size: 20px;
+
+            &::first-letter {
+              text-transform: uppercase;
+            }
+          }
+        }
+
+        p {
+          color: #000000;
+          font-family: Karla;
+          font-weight: 300;
+          font-size: 16px;
+        }
+
+        a {
+          position: absolute;
+          bottom: 20px;
+          color: teal;
+          text-decoration: none;
+          font-family: Karla;
+          font-weight: 300;
+          font-size: 18px;
+
+          &:hover {
+            text-decoration: underline 2px solid teal;
+          }
+        }
+      }
+
+      .poke-right {
+        z-index: 1;
+        overflow: hidden;
+        position: relative;
+        width: 60%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        border-radius: 0 15px 15px 0;
+
+        img {
+          height: 110%;
+          width: 110%;
+          opacity: 90%;
+        }
+      }
+    }
+  }
+}
