@@ -1,0 +1,78 @@
+.poke-modal {
+  position: fixed;
+  z-index: 9999;
+
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: rgba(0, 0, 0, 0.8);
+  }
+
+  .modal-content {
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 380px;
+    width: 50%;
+
+    border-radius: 15px;
+    background: #f6f7f9;
+
+    .close-modal {
+      z-index: 5;
+      position: absolute;
+      top: 15px;
+      right: 15px;
+
+      background: none;
+      border: none;
+
+      img {
+        height: 30px;
+        width: 30px;
+        transition: all, 0.15s ease-in-out;
+      }
+
+      &:hover img {
+        transition: all, 0.15s ease-in-out;
+        transform: scale(1.5);
+      }
+    }
+
+    .poke-left {
+      position: relative;
+      width: 60%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .poke-right {
+      overflow: hidden;
+      width: 40%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        height: 90%;
+        width: 90%;
+        opacity: 90%;
+      }
+    }
+  }
+}

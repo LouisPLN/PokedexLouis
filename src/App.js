@@ -4,7 +4,6 @@ import Home from "./pages/HomeVue";
 import PokedexPage from "./pages/PokedexVue";
 
 const App = () => {
-  console.log("test");
   return (
     <Routes>
       <Route exact path="/Pokedex" element={<PokedexPage />} />

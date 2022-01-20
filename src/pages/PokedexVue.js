@@ -28,7 +28,7 @@ const PokedexVue = () => {
       });
     }
     createPokemonObject(data.results);
-    // console.log(allPokemons);
+    console.log(allPokemons);
   };
 
   useEffect(() => {
@@ -38,18 +38,22 @@ const PokedexVue = () => {
   return (
     <div>
       <Nav />
-      {allPokemons.map((pokemon, index) => (
-        <Pokedex
-          id={pokemon.id}
-          name={pokemon.name}
-          image={pokemon.sprites.front_default}
-          type={pokemon.types[0].type.name}
-          key={index}
-        />
-      ))}
-      <button className="see-more" onClick={() => getAllPokemons()}>
-        Load More
-      </button>
+      <div className="container">
+        <div className="list-poke">
+          {allPokemons.map((pokemon, index) => (
+            <Pokedex
+              id={pokemon.id}
+              name={pokemon.name}
+              image={pokemon.sprites.other.dream_world.front_default}
+              type={pokemon.types[0].type.name}
+              key={index}
+            />
+          ))}
+        </div>
+        <button className="see-more" onClick={() => getAllPokemons()}>
+          Load More
+        </button>
+      </div>
     </div>
   );
 };

@@ -1,0 +1,137 @@
+.rock {
+  background: rgb(155, 137, 123);
+  background: linear-gradient(
+    90deg,
+    rgba(155, 137, 123, 1) 0%,
+    rgba(122, 115, 86, 1) 100%
+  );
+}
+
+.ghost {
+  background-color: #ffffff;
+}
+
+.electric {
+  background: rgb(247, 197, 69);
+  background: linear-gradient(
+    90deg,
+    rgba(247, 197, 69, 1) 0%,
+    rgba(255, 227, 113, 1) 100%
+  );
+}
+
+.bug {
+  background: rgb(112, 168, 59);
+  background: linear-gradient(
+    90deg,
+    rgba(112, 168, 59, 1) 0%,
+    rgba(122, 115, 86, 1) 100%
+  );
+}
+
+.poison {
+  background: rgb(176, 86, 168);
+  background: linear-gradient(
+    90deg,
+    rgba(176, 86, 168, 1) 0%,
+    rgba(169, 116, 188, 1) 100%
+  );
+}
+
+.normal {
+  background: #dddddd;
+  background: linear-gradient(90deg, #d8d8d8 0%, #dddddd 100%);
+}
+
+.fairy {
+  background: rgb(248, 158, 174);
+  background: linear-gradient(
+    90deg,
+    rgba(248, 158, 174, 1) 0%,
+    rgba(244, 181, 193, 1) 100%
+  );
+}
+
+.fire {
+  background: rgb(178, 51, 39);
+  background: linear-gradient(
+    90deg,
+    rgba(178, 51, 39, 1) 0%,
+    rgba(217, 62, 48, 1) 100%
+  );
+}
+
+.grass {
+  background: rgb(100, 211, 104);
+  background: linear-gradient(
+    90deg,
+    rgba(100, 211, 104, 1) 0%,
+    rgba(100, 211, 104, 1) 77%
+  );
+}
+
+.water {
+  background: rgb(91, 199, 250);
+  background: linear-gradient(
+    90deg,
+    rgba(91, 199, 250, 1) 0%,
+    rgba(53, 186, 255, 1) 100%
+  );
+}
+
+.fighting {
+  background: rgb(161, 161, 161);
+  background: linear-gradient(
+    90deg,
+    rgba(161, 161, 161, 1) 0%,
+    rgba(112, 112, 112, 1) 100%
+  );
+}
+
+.psychic {
+  background: rgb(73, 0, 85);
+  background: linear-gradient(
+    90deg,
+    rgba(73, 0, 85, 1) 0%,
+    rgba(145, 0, 98, 1) 100%
+  );
+}
+
+.dark {
+  background: #303030;
+}
+
+.dragon {
+  background: #606060;
+}
+
+.ice {
+  background: rgb(47, 129, 127);
+  background: linear-gradient(
+    90deg,
+    rgba(47, 129, 127, 1) 0%,
+    rgba(0, 236, 255, 1) 100%
+  );
+}
+
+.flying {
+  background: teal;
+}
+
+.ground {
+  background: rgb(77, 34, 34);
+  background: linear-gradient(
+    90deg,
+    rgba(77, 34, 34, 1) 0%,
+    rgba(125, 77, 77, 1) 100%
+  );
+}
+
+.steel {
+  background: rgb(180, 180, 180);
+  background: linear-gradient(
+    90deg,
+    rgba(180, 180, 180, 1) 0%,
+    rgba(224, 255, 253, 1) 100%
+  );
+}
