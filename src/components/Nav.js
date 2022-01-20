@@ -17,6 +17,9 @@ const Nav = () => {
             <li>
               <Link to="/Pokedex">Pokédex</Link>
             </li>
+            <li>
+              <Link to="/Category">Catégories</Link>
+            </li>
           </ul>
         </div>
       </div>

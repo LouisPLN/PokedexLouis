@@ -1,13 +1,15 @@
 import "./App.scss";
 import { Routes, Route } from "react-router-dom";
-import Home from "./pages/HomeVue";
-import PokedexPage from "./pages/PokedexVue";
+import HomeVue from "./pages/HomeVue";
+import PokedexVue from "./pages/PokedexVue";
+import CategoryVue from "./pages/CategoryVue";
 
 const App = () => {
   return (
     <Routes>
-      <Route exact path="/Pokedex" element={<PokedexPage />} />
-      <Route exact path="*" element={<Home />} />
+      <Route exact path="/Category" element={<CategoryVue />} />
+      <Route exact path="/Pokedex" element={<PokedexVue />} />
+      <Route exact path="*" element={<HomeVue />} />
     </Routes>
   );
 };
