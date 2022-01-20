@@ -1,9 +1,10 @@
 .container {
   padding-top: 100px;
-  width: 70%;
-  margin: auto;
+  width: 100%;
 
   .list-poke {
+    width: 70%;
+    margin: auto;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -11,6 +12,7 @@
     gap: 100px 30px;
 
     .poke-card {
+      z-index: 1;
       margin: auto;
       display: flex;
       justify-content: space-between;
@@ -23,7 +25,7 @@
       box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 
       .poke-left {
-        z-index: 2;
+        z-index: 1;
         position: relative;
         width: 40%;
         height: 100%;
@@ -35,11 +37,11 @@
         .poke-name {
           position: absolute;
           top: 20px;
-          left: 20px;
+          left: 25px;
           display: flex;
           justify-content: center;
           align-items: center;
-          width: 150px;
+          width: 160px;
           height: 30px;
 
           color: #ffffff;
@@ -64,25 +66,41 @@
           font-size: 16px;
         }
 
-        a {
+        button {
           position: absolute;
           bottom: 20px;
-          color: teal;
-          text-decoration: none;
-          font-family: Karla;
-          font-weight: 300;
-          font-size: 18px;
+          height: 30px;
+          width: 110px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding-bottom: 2px;
 
-          &:hover {
-            text-decoration: underline 2px solid teal;
+          border: none;
+          font-style: normal;
+          font-weight: 300;
+          font-size: 16px;
+
+          background: #f5db13;
+          color: #ffffff;
+          box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.18);
+          border-radius: 15px;
+          transition: all, 0.1s ease-in-out;
+
+          &:hover,
+          &:focus {
+            padding-bottom: 0;
+
+            background-color: #cfb914;
+            transition: all, 0.1s ease-in-out;
+            box-shadow: none;
           }
         }
       }
 
       .poke-right {
-        z-index: 1;
+        z-index: 0;
         overflow: hidden;
-        position: relative;
         width: 60%;
         height: 100%;
         display: flex;
