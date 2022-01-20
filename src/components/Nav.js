@@ -1,5 +1,6 @@
 import React from "react";
 import "../styles/nav.scss";
+import { Link } from "react-router-dom";
 
 const Nav = () => {
   return (
@@ -10,8 +11,12 @@ const Nav = () => {
         </div>
         <div className="right-nav">
           <ul>
-            <li>Acceuil</li>
-            <li>Pokédex</li>
+            <li>
+              <Link to="/">Acceuil</Link>
+            </li>
+            <li>
+              <Link to="/Pokedex">Pokédex</Link>
+            </li>
           </ul>
         </div>
       </div>

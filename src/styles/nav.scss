@@ -43,10 +43,20 @@
         justify-content: space-around;
         align-items: center;
         li {
+          text-decoration: none;
           display: flex;
           justify-content: center;
           align-items: center;
           list-style: none;
+
+          a {
+            color: #000000;
+            text-decoration: none;
+
+            &:hover {
+              text-decoration: underline #000000 2px;
+            }
+          }
         }
       }
     }

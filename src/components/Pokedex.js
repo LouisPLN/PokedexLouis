@@ -1,4 +1,5 @@
 import React from "react";
+import "../styles/pokedex.scss";
 
 const Pokedex = ({ id, name, image, type }) => {
   const style = `poke-card ${type}`;
