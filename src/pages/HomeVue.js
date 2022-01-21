@@ -1,7 +1,8 @@
 import React from "react";
 import Nav from "../components/Nav";
-import "../styles/home.scss";
+import "../styles/home/home.scss";
 import { Link } from "react-router-dom";
+import Contact from "../components/Contact";
 
 const Home = () => {
   return (
@@ -17,9 +18,12 @@ const Home = () => {
               Vous pouvez désormais connaître le type des Pokémons, leurs
               forces, faiblesses ainsi que leurs capacitées.
             </p>
-            <Link to="/Pokedex">
-              <button>Voir le Pokédex</button>
-            </Link>
+            <div className="btn-home">
+              <Link to="/Pokedex">
+                <button>Voir le Pokédex</button>
+              </Link>
+              <Contact />
+            </div>
             <p className="hero-dev">
               Projet réalisé par
               <a

@@ -1,8 +1,7 @@
 import React, { useState } from "react";
-import PokedexVue from "../pages/PokedexVue";
-import "../styles/pokedex.scss";
-import "../styles/type.scss";
-import "../styles/modal.scss";
+import "../styles/pokedex/pokedex.scss";
+import "../styles/pokedex/type.scss";
+import "../styles/modals/modal.scss";
 
 const Pokedex = ({ id, name, image, type, height, weight, attack, stats }) => {
   const style = `poke-right ${type}`;
@@ -30,7 +29,7 @@ const Pokedex = ({ id, name, image, type, height, weight, attack, stats }) => {
       );
     } else {
       const newList = listFavorite.filter((pokemon) => pokemon.id !== id);
-      console.log("newList", newList);
+      // console.log("newList", newList);
       localStorage.setItem("favorites", JSON.stringify(newList));
     }
     setIsFavorite(!isFavorite);
@@ -115,7 +114,7 @@ const Pokedex = ({ id, name, image, type, height, weight, attack, stats }) => {
             )}
           </button>
           <div className="img-container">
-            <img src={image} alt={name} />
+            <img className="poke-img" src={image} alt={name} />
           </div>
         </div>
       </div>

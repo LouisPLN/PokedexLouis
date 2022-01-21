@@ -97,6 +97,7 @@
         }
 
         button {
+          visibility: visible;
           cursor: pointer;
           position: absolute;
           left: 25px;
@@ -141,6 +142,7 @@
         border-radius: 0 15px 15px 0;
 
         button {
+          visibility: visible;
           cursor: pointer;
           z-index: 5;
           position: absolute;
@@ -168,14 +170,14 @@
 
           @keyframes pulse {
             0% {
-              background-image: url(../../public/logo/Favorite_fill.svg);
+              background-image: url(../../../public/logo/Favorite_fill.svg);
               background-size: 25px;
               background-repeat: no-repeat;
               background-position: center;
               transform: scale(0);
             }
             75% {
-              background-image: url(../../public/logo/Favorite_fill.svg);
+              background-image: url(../../../public/logo/Favorite_fill.svg);
               background-size: 25px;
               background-repeat: no-repeat;
               background-position: center;
@@ -184,7 +186,7 @@
           }
 
           &:hover {
-            background-image: url(../../public/logo/Favorite_fill.svg);
+            background-image: url(../../../public/logo/Favorite_fill.svg);
             background-size: 25px;
             background-repeat: no-repeat;
             background-position: center;
@@ -200,6 +202,7 @@
           align-items: center;
 
           img {
+            visibility: visible;
             height: 110%;
             width: 110%;
             opacity: 90%;

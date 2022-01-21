@@ -4,7 +4,7 @@ import Pokedex from "../components/Pokedex";
 import Nav from "../components/Nav";
 import { useEffect } from "react";
 import { useState } from "react/cjs/react.development";
-import "../styles/pokedex.scss";
+import "../styles/pokedex/pokedex.scss";
 
 const PokedexVue = () => {
   const [allPokemons, setAllPokemons] = useState([]);
@@ -13,7 +13,6 @@ const PokedexVue = () => {
   );
 
   const location = useLocation();
-  console.log(location);
 
   const [value, setValue] = useState("");
   const [filtered, setFiltered] = useState(allPokemons);
@@ -64,11 +63,6 @@ const PokedexVue = () => {
           type="text"
           placeholder="Tapez le nom de votre Pokémon favori !"
         />
-        {/* <button className="clear-btn" onClick={handleClear}>
-          clear
-        </button> */}
-
-        {/* <p>{filtered}</p> */}
         <div className="list-poke">
           {filtered.length === 0
             ? allPokemons.map((pokemon, index) => (

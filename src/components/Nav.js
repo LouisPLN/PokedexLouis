@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/nav.scss";
+import "../styles/nav/nav.scss";
 import { Link } from "react-router-dom";
 
 const Nav = () => {
@@ -18,7 +18,10 @@ const Nav = () => {
               <Link to="/Pokedex">Pokédex</Link>
             </li>
             <li>
-              <Link to="/Category">Catégories</Link>
+              <Link to="/Categories">Catégories</Link>
+            </li>
+            <li>
+              <Link to="/Favoris">Favoris</Link>
             </li>
           </ul>
         </div>
