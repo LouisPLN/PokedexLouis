@@ -13,7 +13,17 @@ const FavorisVue = () => {
         <div className="list-poke">
           {(JSON.parse(localStorage.getItem("favorites")) || []).map(
             (pokemon, index) => (
-              <Pokedex id={pokemon.id} name={pokemon.name} key={index} />
+              <Pokedex
+                id={pokemon.id}
+                name={pokemon.name}
+                image={pokemon.image}
+                type={pokemon.type}
+                height={pokemon.height}
+                weight={pokemon.weight}
+                attack={pokemon.moves}
+                stats={pokemon.stats}
+                key={index}
+              />
             )
           )}
         </div>

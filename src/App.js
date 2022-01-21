@@ -4,15 +4,30 @@ import HomeVue from "./pages/HomeVue";
 import PokedexVue from "./pages/PokedexVue";
 import CategoryVue from "./pages/CategoryVue";
 import FavorisVue from "./pages/FavorisVue";
+import Loader from "./Loader";
+import { useState } from "react";
+import { useEffect } from "react/cjs/react.development";
 
 const App = () => {
-  return (
-    <Routes>
-      <Route exact path="/Favoris" element={<FavorisVue />} />
-      <Route exact path="/Categories" element={<CategoryVue />} />
-      <Route exact path="/Pokedex" element={<PokedexVue />} />
-      <Route exact path="*" element={<HomeVue />} />
-    </Routes>
+  const [loader, setLoader] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoader(false);
+    }, 1900);
+  }, []);
+  return loader ? (
+    <Loader />
+  ) : (
+    <div>
+      <Routes>
+        <Route exact path="/Favoris" element={<FavorisVue />} />
+        <Route exact path="/Categories" element={<CategoryVue />} />
+        <Route exact path="/Pokedex" element={<PokedexVue />} />
+        <Route exact path="*" element={<HomeVue />} />
+      </Routes>
+      )
+    </div>
   );
 };
 

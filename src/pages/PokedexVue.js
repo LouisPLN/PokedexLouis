@@ -9,7 +9,7 @@ import "../styles/pokedex/pokedex.scss";
 const PokedexVue = () => {
   const [allPokemons, setAllPokemons] = useState([]);
   const [seeMore, setSeeMore] = useState(
-    "https://pokeapi.co/api/v2/pokemon?limit=200"
+    "https://pokeapi.co/api/v2/pokemon?limit=150"
   );
 
   const location = useLocation();

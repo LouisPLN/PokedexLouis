@@ -53,6 +53,26 @@
       }
     }
 
+    .type-poke {
+      cursor: pointer;
+      z-index: 5;
+      position: absolute;
+      top: 0;
+      left: 360px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 200px;
+      height: 50px;
+      background: #303030;
+
+      font-family: Karla;
+      font-weight: bold;
+      font-size: 20px;
+      color: #fff;
+      border-radius: 0 0 15px 15px;
+    }
+
     .poke-left {
       position: relative;
       width: 60%;
