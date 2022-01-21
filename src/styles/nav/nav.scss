@@ -27,7 +27,7 @@
     }
     .right-nav {
       height: 100%;
-      width: 50%;
+      width: 70%;
       display: flex;
       justify-content: flex-end;
       align-items: center;
@@ -40,7 +40,7 @@
       ul {
         width: 60%;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
         li {
           text-decoration: none;

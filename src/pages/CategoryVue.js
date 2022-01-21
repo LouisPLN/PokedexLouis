@@ -3,8 +3,8 @@ import Pokedex from "../components/Pokedex";
 import Nav from "../components/Nav";
 import { useEffect } from "react";
 import { useState } from "react/cjs/react.development";
-import "../styles/pokedex.scss";
-import "../styles/category.scss";
+import "../styles/pokedex/pokedex.scss";
+import "../styles/pokedex/category.scss";
 
 const CategoryVue = () => {
   const [allPokemons, setAllPokemons] = useState([]);
@@ -22,7 +22,7 @@ const CategoryVue = () => {
     urlList.map(async (url) => {
       const res = await fetch(url);
       const data = await res.json();
-      await console.log("data", data);
+      // await console.log("data", data);
       setAllPokemons((currentList) => [...currentList, data]);
     });
   };
