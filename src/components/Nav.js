@@ -7,7 +7,9 @@ const Nav = () => {
     <div className="nav">
       <div className="container-nav">
         <div className="left-nav">
-          <img src="/logo/Logo.svg" alt="logo Pokemon" />
+          <Link to="/">
+            <img src="/logo/Logo.svg" alt="logo Pokemon" />
+          </Link>
         </div>
         <div className="right-nav">
           <ul>
