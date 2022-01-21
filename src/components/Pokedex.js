@@ -9,11 +9,12 @@ const Pokedex = ({ id, name, image, type, height, weight, attack, stats }) => {
   const imageSrc = `/badges/${type}.png`;
 
   const [modal, setModal] = useState(false);
-  const [isFavorite, setIsFavorite] = useState(false);
 
   const toggleModal = () => {
     setModal(!modal);
   };
+
+  const [isFavorite, setIsFavorite] = useState(false);
 
   const handlePokemonFavorite = () => {
     const listFavorite = JSON.parse(localStorage.getItem("favorites")) || [];
@@ -22,6 +23,12 @@ const Pokedex = ({ id, name, image, type, height, weight, attack, stats }) => {
       const pokemon = {
         id: id,
         name: name,
+        image: image,
+        type: type,
+        height: height,
+        weight: weight,
+        attack: attack,
+        stats: stats,
       };
       localStorage.setItem(
         "favorites",
@@ -44,6 +51,8 @@ const Pokedex = ({ id, name, image, type, height, weight, attack, stats }) => {
               <button className="close-modal" onClick={toggleModal}>
                 <img src="/logo/close.svg" alt="Close" />
               </button>
+
+              <div className="type-poke">{type}</div>
 
               <div className="poke-left">
                 <h3>{name}</h3>
