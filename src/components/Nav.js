@@ -15,7 +15,7 @@ const Nav = () => {
         <div className="right-nav">
           <ul>
             <li>
-              <Link to="/React-PokedexLouis/">Acceuil</Link>
+              <Link to="/React-PokedexLouis/">Accueil</Link>
             </li>
             <li>
               <Link to="/React-PokedexLouis/Pokedex">Pokédex</Link>
