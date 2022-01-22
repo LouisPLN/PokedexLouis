@@ -20,9 +20,21 @@ const App = () => {
   ) : (
     <div>
       <Routes>
-        <Route exact path="/Favoris" element={<FavorisVue />} />
-        <Route exact path="/Categories" element={<CategoryVue />} />
-        <Route exact path="/Pokedex" element={<PokedexVue />} />
+        <Route
+          exact
+          path="/React-PokedexLouis/Favoris"
+          element={<FavorisVue />}
+        />
+        <Route
+          exact
+          path="/React-PokedexLouis/Categories"
+          element={<CategoryVue />}
+        />
+        <Route
+          exact
+          path="/React-PokedexLouis/Pokedex"
+          element={<PokedexVue />}
+        />
         <Route exact path="*" element={<HomeVue />} />
       </Routes>
       )

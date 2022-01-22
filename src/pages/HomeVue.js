@@ -22,7 +22,7 @@ const Home = () => {
               forces, faiblesses ainsi que leurs capacitées.
             </p>
             <div className="btn-home">
-              <Link to="/Pokedex">
+              <Link to="/React-PokedexLouis/Pokedex">
                 <button>Voir le Pokédex</button>
               </Link>
               <Contact />

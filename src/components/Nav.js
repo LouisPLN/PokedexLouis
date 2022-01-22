@@ -15,16 +15,16 @@ const Nav = () => {
         <div className="right-nav">
           <ul>
             <li>
-              <Link to="/">Acceuil</Link>
+              <Link to="/React-PokedexLouis/">Acceuil</Link>
             </li>
             <li>
-              <Link to="/Pokedex">Pokédex</Link>
+              <Link to="/React-PokedexLouis/Pokedex">Pokédex</Link>
             </li>
             <li>
-              <Link to="/Categories">Catégories</Link>
+              <Link to="/React-PokedexLouis/Categories">Catégories</Link>
             </li>
             <li>
-              <Link to="/Favoris">Favoris</Link>
+              <Link to="/React-PokedexLouis/Favoris">Favoris</Link>
             </li>
           </ul>
         </div>
