@@ -4,6 +4,7 @@ import Pokedex from "../components/Pokedex";
 import Nav from "../components/Nav";
 import { useState, useEffect } from "react";
 import "../styles/pokedex/pokedex.scss";
+import Logo from "../logo/Logo.svg";
 
 const PokedexVue = () => {
   const [allPokemons, setAllPokemons] = useState([]);
@@ -11,7 +12,7 @@ const PokedexVue = () => {
     "https://pokeapi.co/api/v2/pokemon?limit=150"
   );
 
-  const location = useLocation();
+  // const location = useLocation();
 
   const [value, setValue] = useState("");
   const [filtered, setFiltered] = useState(allPokemons);
@@ -25,10 +26,10 @@ const PokedexVue = () => {
     );
   };
 
-  const handleClear = () => {
-    setValue("");
-    setFiltered(allPokemons);
-  };
+  // const handleClear = () => {
+  //   setValue("");
+  //   setFiltered(allPokemons);
+  // };
 
   const createPokemonObject = async (result) => {
     result.forEach(async (pokemon) => {
@@ -55,7 +56,7 @@ const PokedexVue = () => {
     <div>
       <Nav />
       <div className="container">
-        <img className="logo" src="/logo/Logo.svg" alt="logo" />
+        <img className="logo" src={Logo} alt="logo" />
         <input
           onChange={(e) => handleChange(e.target.value)}
           value={value}

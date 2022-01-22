@@ -1,6 +1,7 @@
 import React from "react";
 import "../styles/nav/nav.scss";
 import { Link } from "react-router-dom";
+import Logo from "../logo/Logo.svg";
 
 const Nav = () => {
   return (
@@ -8,7 +9,7 @@ const Nav = () => {
       <div className="container-nav">
         <div className="left-nav">
           <Link to="/">
-            <img src="/logo/Logo.svg" alt="logo Pokemon" />
+            <img src={Logo} alt="logo Pokemon" />
           </Link>
         </div>
         <div className="right-nav">

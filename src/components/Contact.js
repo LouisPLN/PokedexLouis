@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import emailjs from "@emailjs/browser";
 import "../styles/modals/contact.scss";
+import Close from "../logo/close.svg";
 
 const Result = () => {
   return <p>Votre message a bien été envoyé</p>;
@@ -40,7 +41,7 @@ const Contact = () => {
           <div className="overlay" onClick={toggleModal}></div>
           <form onSubmit={sendEmail} className="modal-content">
             <button className="close-modal" onClick={toggleModal}>
-              <img src="/logo/close.svg" alt="Close" />
+              <img src={Close} alt="Close" />
             </button>
             <div>{result ? <Result /> : null}</div>
             <label>NOM Prénom</label>

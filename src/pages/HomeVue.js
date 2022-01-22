@@ -3,6 +3,9 @@ import Nav from "../components/Nav";
 import "../styles/home/home.scss";
 import { Link } from "react-router-dom";
 import Contact from "../components/Contact";
+import Banner from "../logo/BannerComplete.svg";
+import Pokeball from "../logo/Pokeball2.svg";
+import Github from "../logo/GitHub.png";
 
 const Home = () => {
   return (
@@ -28,25 +31,26 @@ const Home = () => {
               Projet réalisé par
               <a
                 target="_blank"
+                rel="noreferrer"
                 href="https://www.linkedin.com/in/louis-poulin/"
               >
                 Louis Poulin
               </a>
               pour le cours de React d'ASI-DEV2{" "}
-              <img src="/logo/Pokeball2.svg" alt="Pokéball" />
+              <img src={Pokeball} alt="Pokéball" />
             </p>
           </div>
           <div className="hero-image">
-            <a target="_blank" href="https://github.com/LouisPLN">
-              Suis moi sur GitHub <img src="/logo/GitHub.png" />
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://github.com/LouisPLN"
+            >
+              Suis moi sur GitHub <img src={Github} />
             </a>
           </div>
         </div>
-        <img
-          className="hero-banner"
-          src="/logo/BannerComplete.svg"
-          alt="hero banner"
-        />
+        <img className="hero-banner" src={Banner} alt="hero banner" />
       </div>
     </div>
   );
