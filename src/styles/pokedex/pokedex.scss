@@ -170,14 +170,14 @@
 
           @keyframes pulse {
             0% {
-              background-image: url(../../../public/logo/Favorite_fill.svg);
+              background-image: url(../../logo/Favorite_fill.svg);
               background-size: 25px;
               background-repeat: no-repeat;
               background-position: center;
               transform: scale(0);
             }
             75% {
-              background-image: url(../../../public/logo/Favorite_fill.svg);
+              background-image: url(../../logo/Favorite_fill.svg);
               background-size: 25px;
               background-repeat: no-repeat;
               background-position: center;
@@ -186,7 +186,7 @@
           }
 
           &:hover {
-            background-image: url(../../../public/logo/Favorite_fill.svg);
+            background-image: url(../../logo/Favorite_fill.svg);
             background-size: 25px;
             background-repeat: no-repeat;
             background-position: center;

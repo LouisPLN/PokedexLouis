@@ -32,7 +32,7 @@ const CategoryVue = () => {
     setAllTypes(results);
   };
 
-  useEffect(async () => {
+  useEffect(() => {
     getAllTypes();
   }, []);
 

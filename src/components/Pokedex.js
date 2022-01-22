@@ -2,11 +2,14 @@ import React, { useState } from "react";
 import "../styles/pokedex/pokedex.scss";
 import "../styles/pokedex/type.scss";
 import "../styles/modals/modal.scss";
+import Close from "../logo/close.svg";
+import FavFull from "../logo/Favorite_fill.svg";
+import Fav from "../logo/Favorite.svg";
 
 const Pokedex = ({ id, name, image, type, height, weight, attack, stats }) => {
   const style = `poke-right ${type}`;
 
-  const imageSrc = `/badges/${type}.png`;
+  // const imageSrc = `/badges/${type}.png`;
 
   const [modal, setModal] = useState(false);
 
@@ -49,7 +52,7 @@ const Pokedex = ({ id, name, image, type, height, weight, attack, stats }) => {
           <div className="overlay" onClick={toggleModal}>
             <div className="modal-content">
               <button className="close-modal" onClick={toggleModal}>
-                <img src="/logo/close.svg" alt="Close" />
+                <img src={Close} alt="Close" />
               </button>
 
               <div className="type-poke">{type}</div>
@@ -117,9 +120,9 @@ const Pokedex = ({ id, name, image, type, height, weight, attack, stats }) => {
         <div className={style}>
           <button onClick={handlePokemonFavorite}>
             {isFavorite ? (
-              <img src="/logo/Favorite_fill.svg" alt="Fav" />
+              <img src={FavFull} alt="Fav" />
             ) : (
-              <img src="/logo/Favorite.svg" alt="Fav" />
+              <img src={Fav} alt="Fav" />
             )}
           </button>
           <div className="img-container">

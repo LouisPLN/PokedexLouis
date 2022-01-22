@@ -5,7 +5,7 @@ import "./App.scss";
 const Loader = () => {
   return (
     <div className="loader">
-      <img src={LoaderImg} />
+      <img src={LoaderImg} alt="Loader" />
     </div>
   );
 };
