@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/React-PokedexLouis/static/css/main.d5ae7298.css",
-    "main.js": "/React-PokedexLouis/static/js/main.35f3d23f.js",
+    "main.js": "/React-PokedexLouis/static/js/main.1f347a93.js",
     "static/media/BannerComplete.svg": "/React-PokedexLouis/static/media/BannerComplete.a58d56f4eb265701f50e8087eccfae9e.svg",
     "static/media/Logo.svg": "/React-PokedexLouis/static/media/Logo.ebb031bd9ad36328cd0801f8ec80a067.svg",
     "static/media/Pokeball2.svg": "/React-PokedexLouis/static/media/Pokeball2.8c1a3aedb8ea6654e7b3ea35822a9e09.svg",
@@ -10,10 +10,10 @@
     "index.html": "/React-PokedexLouis/index.html",
     "static/media/close.svg": "/React-PokedexLouis/static/media/close.70648932e360caa0ad38ac6bfa86d347.svg",
     "main.d5ae7298.css.map": "/React-PokedexLouis/static/css/main.d5ae7298.css.map",
-    "main.35f3d23f.js.map": "/React-PokedexLouis/static/js/main.35f3d23f.js.map"
+    "main.1f347a93.js.map": "/React-PokedexLouis/static/js/main.1f347a93.js.map"
   },
   "entrypoints": [
     "static/css/main.d5ae7298.css",
-    "static/js/main.35f3d23f.js"
+    "static/js/main.1f347a93.js"
   ]
 }
