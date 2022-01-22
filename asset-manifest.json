@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/React-PokedexLouis/static/css/main.d5ae7298.css",
-    "main.js": "/React-PokedexLouis/static/js/main.bb9b9351.js",
-    "static/media/BannerComplete.svg": "/React-PokedexLouis/static/media/BannerComplete.a58d56f4eb265701f50e8087eccfae9e.svg",
-    "static/media/Logo.svg": "/React-PokedexLouis/static/media/Logo.ebb031bd9ad36328cd0801f8ec80a067.svg",
-    "static/media/Pokeball2.svg": "/React-PokedexLouis/static/media/Pokeball2.8c1a3aedb8ea6654e7b3ea35822a9e09.svg",
-    "static/media/Favorite_fill.svg": "/React-PokedexLouis/static/media/Favorite_fill.3a75344962a2765a2936c4658f8beed8.svg",
-    "static/media/Favorite.svg": "/React-PokedexLouis/static/media/Favorite.86d91107fab7705f373d63f4b8f7edc4.svg",
+    "main.css": "/React-PokedexLouis/static/css/main.f566cbf1.css",
+    "main.js": "/React-PokedexLouis/static/js/main.2e8995a5.js",
+    "static/media/BannerComplete.svg": "/React-PokedexLouis/static/media/BannerComplete.62267203e1a49a7c3782cfdb248790f8.svg",
+    "static/media/Logo.svg": "/React-PokedexLouis/static/media/Logo.cab6a0cce1e8384dc78f83dcf7806517.svg",
+    "static/media/Pokeball2.svg": "/React-PokedexLouis/static/media/Pokeball2.d6f614ba319aa67e0ff3eb854555e579.svg",
+    "static/media/Favorite_fill.svg": "/React-PokedexLouis/static/media/Favorite_fill.7d0af407e4b5340d1dc983bd437554ef.svg",
+    "static/media/Favorite.svg": "/React-PokedexLouis/static/media/Favorite.a85d96199dec60ef2a7689528dcfa935.svg",
     "index.html": "/React-PokedexLouis/index.html",
-    "static/media/close.svg": "/React-PokedexLouis/static/media/close.70648932e360caa0ad38ac6bfa86d347.svg",
-    "main.d5ae7298.css.map": "/React-PokedexLouis/static/css/main.d5ae7298.css.map",
-    "main.bb9b9351.js.map": "/React-PokedexLouis/static/js/main.bb9b9351.js.map"
+    "static/media/close.svg": "/React-PokedexLouis/static/media/close.4192cf828572d7009df77e6736fb0c2b.svg",
+    "main.f566cbf1.css.map": "/React-PokedexLouis/static/css/main.f566cbf1.css.map",
+    "main.2e8995a5.js.map": "/React-PokedexLouis/static/js/main.2e8995a5.js.map"
   },
   "entrypoints": [
-    "static/css/main.d5ae7298.css",
-    "static/js/main.bb9b9351.js"
+    "static/css/main.f566cbf1.css",
+    "static/js/main.2e8995a5.js"
   ]
 }
