@@ -1,8 +1,7 @@
 import React from "react";
 import Pokedex from "../components/Pokedex";
 import Nav from "../components/Nav";
-import { useEffect } from "react";
-import { useState } from "react/cjs/react.development";
+import { useState, useEffect } from "react";
 import "../styles/pokedex/pokedex.scss";
 import "../styles/pokedex/category.scss";
 

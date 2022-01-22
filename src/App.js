@@ -5,8 +5,7 @@ import PokedexVue from "./pages/PokedexVue";
 import CategoryVue from "./pages/CategoryVue";
 import FavorisVue from "./pages/FavorisVue";
 import Loader from "./Loader";
-import { useState } from "react";
-import { useEffect } from "react/cjs/react.development";
+import { useState, useEffect } from "react";
 
 const App = () => {
   const [loader, setLoader] = useState(true);
